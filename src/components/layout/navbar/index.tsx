@@ -1,6 +1,7 @@
 import { SiPexels as PexelsIcon } from "react-icons/si";
 import Link from "next/link";
 import SearchBar from "@/components/layout/navbar/search";
+import {Suspense} from "react";
 
 export default function Navbar() {
     return(
@@ -15,7 +16,9 @@ export default function Navbar() {
                             Pexels
                         </span>
                     </Link>
-                    <SearchBar />
+                    <Suspense fallback={null}>
+                        <SearchBar />
+                    </Suspense>
                 </div>
             </nav>
         </div>
