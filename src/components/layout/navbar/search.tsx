@@ -7,7 +7,7 @@ export default function SearchBar() {
     const searchParams = useSearchParams();
 
     return(
-        <form action="/search" autoComplete="off" className="bg-[#f7f7f7] relative h-full w-full  rounded-md">
+        <form action="/search" autoComplete="off" className="bg-[#f7f7f7] hidden relative h-full w-full  rounded-md">
             <div
                 className="group h-full flex items-center rounded-md  focus-within:border focus-within:border-gray-400"
             >
